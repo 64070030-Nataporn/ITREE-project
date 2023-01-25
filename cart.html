@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
+    <script href="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="containers">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between navbarmenu">
+            <ul class="nav col-12 col-md-auto justify-content-center mb-md-0 align-items-center">
+                <li class="px-1">
+                    <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark">
+                        <img src="https://cdn.discordapp.com/attachments/1021309167371300898/1037306046152192040/unknown.png"
+                            height="60px" class="px-3"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link px-2 text-dark" href="index.html">ITREE</a>
+                </li>
+            </ul>
+
+            <!--menu-->
+            <ul class="nav col-12 col-md-auto justify-content-center mb-md-0 align-items-center">
+                <li class="tonmai px-3">
+                    <a type="button" class="nav-link px-2 text-dark" onclick="showsubmenutree()"
+                        id="tree" value="1">ต้นไม้</a>
+                        <div class="text-center sub-menu" id="sub_menu_tree">
+                            <a class="col" href="insidetree.html" style="text-decoration: none;">
+                                <img src="https://pueanry.co/wp-content/uploads/2020/05/Osofsky_Oct19-5.jpg">
+                                <p>ต้นไม้ภายใน</p>
+                            </a>
+                            <a class="col" href="outsidetree.html" style="text-decoration: none;">
+                                <img src="http://www.banidea.com/wp-content/uploads/2012/07/fengshui-garden-via-banidea-1.jpg">
+                                <p>ต้นไม้ภายนอก</p>
+                            </a>
+                        </div>
+                </li>
+
+                <li class="px-3">
+                    <a href="gardentools.html" class="nav-link px-2 text-dark">อุปกรณ์ทำสวน</a>
+                </li>
+
+
+                <li class="px-3">
+                    <a href="contact.html" class="nav-link px-2 text-dark">ติดต่อเรา</a>
+                </li>
+
+                <li class="px-3">
+                    <a class="nav-link px-2 carticon" href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" height="40px">
+                        <div id="numcart" class="numcart"></div>
+                    </a>
+                </li>
+
+                <li class="px-3">
+                    <a class="nav-link px-2" href="login.php">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" height="40px"> 
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="row" id="resultproduct">
+            <div class="col-6">
+                <div class="shopping-cart" id="shopping-cart">
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div id="labelprice" class="text-center">
+                    <h3>ยอดรวมสินค้า</h3>
+                    <div id="totalprice">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+    
+    </div>
+    
+</body>
+<script src="cart.js"></script>
+
+</html>

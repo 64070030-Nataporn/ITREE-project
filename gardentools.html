@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+<body>
+    <div class="containers">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between navbarmenu">
+            <ul class="nav col-12 col-md-auto justify-content-center mb-md-0 align-items-center">
+                <li class="px-1">
+                    <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark">
+                        <img src="https://cdn.discordapp.com/attachments/1021309167371300898/1037306046152192040/unknown.png"
+                            height="60px" class="px-3"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link px-2 text-dark" href="index.html">ITREE</a>
+                </li>
+            </ul>
+
+            <!--menu-->
+            <ul class="nav col-12 col-md-auto justify-content-center mb-md-0 align-items-center">
+                <li class="tonmai px-3">
+                    <a type="button" class="nav-link px-2 text-dark" onclick="showsubmenutree()"
+                        id="tree" value="1">ต้นไม้</a>
+                        <div class="text-center sub-menu" id="sub_menu_tree">
+                            <a class="col" href="insidetree.html" style="text-decoration: none;">
+                                <img src="https://pueanry.co/wp-content/uploads/2020/05/Osofsky_Oct19-5.jpg">
+                                <p>ต้นไม้ภายใน</p>
+                            </a>
+                            <a class="col" href="outsidetree.html" style="text-decoration: none;">
+                                <img src="http://www.banidea.com/wp-content/uploads/2012/07/fengshui-garden-via-banidea-1.jpg">
+                                <p>ต้นไม้ภายนอก</p>
+                            </a>
+                        </div>
+                </li>
+
+                <li class="px-3">
+                    <a href="gardentools.html" class="nav-link px-2 text-dark">อุปกรณ์ทำสวน</a>
+                </li>
+
+
+                <li class="px-3">
+                    <a href="contact.html" class="nav-link px-2 text-dark">ติดต่อเรา</a>
+                </li>
+
+                <li class="px-3">
+                    <a class="nav-link px-2 carticon" href="cart.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" height="40px">
+                        <div id="numcart" class="numcart"></div>
+                    </a>
+                </li>
+
+                <li class="px-3">
+                    <a class="nav-link px-2" href="login.php">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" height="40px"> 
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+
+        <div class="bannergardent"></div>
+        <div class="row" style="padding-top:50px ;">
+            <div class="col d-flex justify-content-center">
+                <a href="#gbox" class="card border-success " style="text-decoration: none; color: black;width: 18rem;">
+                    <img src="https://cdn.discordapp.com/attachments/967385323313180762/1041709625868832788/flowerpot.png" class="card-img-top">
+                    <div class="card-body">
+                      <h1 class="card-text text-center">กระถางต้นไม้</h1>
+                    </div>
+                  </a>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <a href="#gsoil" class="card border-success" style="text-decoration: none; color: black;width: 18rem;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1993/1993780.png" class="card-img-top">
+                    <div class="card-body">
+                      <h1  class="card-text text-center">ปุ๋ยและดิน</h1>
+                    </div>
+                  </a>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <a href="#gother" class="card border-success" style="text-decoration: none; color: black;width: 18rem;">
+                    <img src="https://cdn.discordapp.com/attachments/967385323313180762/1042056953016360970/unknown.png" class="card-img-top">
+                    <div class="card-body">
+                      <h1  class="card-text text-center">อุปกรณ์ทำสวน</h1>
+                    </div>
+                  </a>
+            </div>
+        </div>
+        <div class="containergardentools">
+            
+            
+            <div class="gbox">
+                <div class="col-12" id="gbox">
+                    <br><hr  class="text-success"><br>
+                    <h1>กระถางต้นไม้</h1><br>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/lsezfd.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระถางต้นไม้ทรงสูง 4นิ้ว 50ใบ</a>
+                                </div>
+                                <div class="toolprice">199 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('1')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/0m623h.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระถางต้นไม้สี่เหลี่ยมทรงสูง 7นิ้ว 10ใบ</a>
+                                </div>
+                                <div class="toolprice">139 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('2')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/krvvn8.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระถางแคคตัส ทรงถ้วยญี่ปุ่น 5นิ้ว 1ใบ</a>
+                                </div>
+                                <div class="toolprice">15 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('3')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/cngn08.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระแคคตัส กลม2.5นิ้ว 50ใบ</a>
+                                </div>
+                                <div class="toolprice">69 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('4')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://j.lnwfile.com/_/j/_raw/9g/4t/lc.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >อ่างบัว 16นิ้ว 20ใบ</a>
+                                </div>
+                                <div class="toolprice">500 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('5')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://j.lnwfile.com/_/j/_raw/1y/qh/1m.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระถางแคคตัส สี่เหลี่ยม2นิ้ว 100ใบ</a>
+                                </div>
+                                <div class="toolprice">150 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('6')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/lewmuh.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระถางair pot 15นิ้ว</a>
+                                </div>
+                                <div class="toolprice">30 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('7')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://j.lnwfile.com/_/j/_fit/250/250/vr/ec/g5.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระถางต้นไม้ทรงหยดน้ำ 12นิ้ว</a>
+                                </div>
+                                <div class="toolprice">149 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('8')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/akewrj.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระถางต้นไม้รุ่นปากแตร 4นิ้ว</a>
+                                </div>
+                                <div class="toolprice">320 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('9')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/fzubfg.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กระถางต้นไม้สี่เหลี่ยม 4นิ้ว 20ใบ</a>
+                                </div>
+                                <div class="toolprice">160 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="boxproduct('10')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" id="gsoil">
+                <hr  class="text-success"><br>
+                <h1>ปุ๋ยและดิน</h1><br>
+            </div>
+            <div class="gsoil">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/61vmzd.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ปุ๋ยเคมีน้ำ สูตร18-6-6</a>
+                                </div>
+                                <div class="toolprice">300 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('1')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/9l7kgy.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ปุ๋ยเคมีน้ำ สูตร10-10-10</a>
+                                </div>
+                                <div class="toolprice">300 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('2')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/xcgkhx.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >โบรอน150</a>
+                                </div>
+                                <div class="toolprice">450 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('3')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/bzvzwx.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >แมกนีเซียม300</a>
+                                </div>
+                                <div class="toolprice">450 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('4')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/m09237.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >สังกะสี+แมงกานีส600</a>
+                                </div>
+                                <div class="toolprice">480 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('5')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/pg4wkn.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ปุ๋ยเกล็ด สูตร46-0-0 1กก</a>
+                                </div>
+                                <div class="toolprice">110 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('6')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/7agjf3.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ปุ๋ยเกล็ด สูตร20-20-20 1กก</a>
+                                </div>
+                                <div class="toolprice">110 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('7')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://i0.wp.com/kaset.today/wp-content/uploads/2021/08/19e4161f84d39cd24fd8eaeee6768f74.jpg?fit=640%2C640&ssl=1" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ดินพร้อมปลูก 3.5 กิโล</a>
+                                </div>
+                                <div class="toolprice">20 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('8')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://www.nanagarden.com/Picture/Product/400/331544.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ดินผสมพร้อมปลูก</a>
+                                </div>
+                                <div class="toolprice">14 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('9')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://i0.wp.com/kaset.today/wp-content/uploads/2021/08/3ec88ab1b81d2474a2e6bdda1c122c83.png_720x720q80.jpg_.webp?fit=540%2C720&ssl=1" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >มูลไส้เดือน</a>
+                                </div>
+                                <div class="toolprice">18 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="soilproduct('10')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" id="gother">
+                <hr  class="text-success"><br>
+                <h1>อุปกรณ์ทำสวน</h1><br>
+            </div>
+            <div class="gother">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://j.lnwfile.com/_/j/_raw/fo/xy/mp.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >พลั่วเหล็ก ปลายแหลม</a>
+                                </div>
+                                <div class="toolprice">350 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('1')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://j.lnwfile.com/_/j/_raw/of/xk/un.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >พลั่วเหล็ก ปลายตัด</a>
+                                </div>
+                                <div class="toolprice">350 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('2')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/ydg44o.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >พลั่วพรวนดิน</a>
+                                </div>
+                                <div class="toolprice">20 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('3')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/y2aqcx.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ส้อมพรวนดิน</a>
+                                </div>
+                                <div class="toolprice">20 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('4')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/8lis5m.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >กรรไกรตัดกิ่ง</a>
+                                </div>
+                                <div class="toolprice">119 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('5')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/4squjg.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ป้ายชื่อต้นไม้ 20ชิ้น</a>
+                                </div>
+                                <div class="toolprice">25 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('6')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/mchufz.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >foggy 2ลิตร</a>
+                                </div>
+                                <div class="toolprice">75 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('7')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://j.lnwfile.com/_/j/_fit/250/250/4m/kv/14.png" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >บัวรดน้ำ</a>
+                                </div>
+                                <div class="toolprice">125 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('8')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/r8ltpx.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ตะกร้าใส่ปุ๋ยขนาดเล็ก 20ชิ้น</a>
+                                </div>
+                                <div class="toolprice">30 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('9')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="gtools">
+                            <a class="tool" name="tool">
+                                <img class="gtoolsimg" src="https://inwfile.com/s-j/exkra2.jpg" />
+                            </a>
+                            <div class="tooldetail">
+                                <div class="toolname">
+                                    <a class="navbar-brand text-dark" >ช้อนตักดิน</a>
+                                </div>
+                                <div class="toolprice">25 บาท</div>
+                                <a href="select.html">
+                                    <button onclick="otherproduct('10')" class="buybtn">สั่งซื้อ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containers" id="footer">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                <div class="col mb-3">
+                    <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
+                        <img src="https://media.discordapp.net/attachments/1021309167371300898/1040305294540030043/IMG_0196.png"
+                                height="130px" class="px-3"/>
+                    </a>
+                    <p class="text-muted year">© 2022</p>
+                </div>
+            
+                <div class="col mb-3">
+            
+                </div>
+            
+                <div class="col mb-3">
+                    <h5>ฝ่ายบริการลูกค้า</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><p1 class="p-0">ติดต่อเรา</p1></li>
+                        <li class="nav-item mb-2"><p1 class="p-0">ศูนย์บริการ</p1></li>
+                        <li class="nav-item mb-2"><p1 class="p-0">คำถามที่พบบ่อย</p1></li>
+                    </ul>
+                </div>
+              
+                <div class="col mb-3">
+                    <h5>นโยบายของเรา</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><p1 class="p-0">ข้อกำหนด</p1></li>
+                      <li class="nav-item mb-2"><p1 class="p-0">นโยบายส่วนตัว</p1></li>
+                      <li class="nav-item mb-2"><p1 class="p-0">เงื่อนไขการส่งคืน / เปลี่ยนสินค้า</p1></li>
+                    </ul>
+                </div>
+              
+                <div class="col mb-3">
+                    <h5>โซเชียลมีเดีย</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><p1 class=" p-0">Facebook</p1></li>
+                      <li class="nav-item mb-2"><p1 class=" p-0">Line</p1></li>
+                      <li class="nav-item mb-2"><p1 class=" p-0">Youtube</p1></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+<script src="scripts.js"></script>
+<script src="cart.js"></script>
+</html>

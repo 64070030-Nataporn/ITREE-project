@@ -1,0 +1,1066 @@
+* {
+  font-family: "Prompt", sans-serif;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.containers {
+  width: 100%;
+  height: 100%;
+}
+.navbarmenu {
+  background-color: #fad6a5;
+}
+h1,
+p {
+  color: black;
+}
+
+.allslide {
+  height: 400px;
+}
+
+.sub-menu {
+  position: absolute;
+  background-color: #9f8772;
+  width: 100%;
+  left: 0;
+  top: 60px;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-around;
+  visibility: hidden;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.sub-menu .col img {
+  width: 250px;
+  height: 180px;
+}
+
+#tree:active {
+  border: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Prompt", sans-serif;
+}
+.containerinsidet {
+  width: 100%;
+  padding-left: 40px;
+}
+.row1 {
+  padding-top: 80px;
+  padding-left: 120px;
+  font-size: 20px;
+}
+.row2 {
+  padding-left: 158px;
+  font-size: 20px;
+}
+.insidet1 {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  height: 520px;
+  width: 300px;
+  margin-bottom: 100px;
+  transition-delay: 4s;
+}
+.plant {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.plantdetail {
+  margin: 5px;
+  padding-left: 2px;
+}
+.bannerinsidet {
+  background-image: url(https://cdn.discordapp.com/attachments/1021309167371300900/1041372591241306112/1.png);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+h1,
+p {
+  color: black;
+}
+
+/* .picslide {
+    position: relative;
+    width: 300px;
+} */
+
+.allslide {
+  height: 350px;
+}
+
+.tonmai:hover .sub-menu .col img {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.sub-menu .col .navimg {
+  width: 250px;
+  height: 180px;
+}
+ul {
+  font-size: 17px;
+}
+.btn {
+  width: 225px;
+  background-color: #27abc8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 325px;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+.containergardentools {
+  width: 100%;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.row {
+  margin: 10px;
+  border: none;
+}
+
+.gtools {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  width: 300px;
+}
+
+.tool {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.gtoolsimg {
+  width: 280px;
+  height: 380px;
+  border-radius: 5px;
+}
+
+.tooldetail {
+  margin: 5px;
+  padding-left: 2px;
+}
+
+h1,
+p {
+  color: black;
+}
+
+.picslide {
+  position: relative;
+  width: 300px;
+}
+
+.allslide {
+  height: 350px;
+}
+
+.tonmai:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.sub-menu .col img {
+  width: 250px;
+  height: 180px;
+}
+.buybtn {
+  background-color: #27abc8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 280px;
+}
+.buybtn:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+.containeroutsidet {
+  width: 100%;
+  padding-left: 40px;
+}
+.row1 {
+  padding-top: 80px;
+  padding-left: 120px;
+  font-size: 20px;
+}
+.row2 {
+  padding-left: 158px;
+  font-size: 20px;
+}
+.outsidet1 {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  height: 520px;
+  width: 300px;
+  margin-bottom: 100px;
+}
+.plant {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.plantdetail {
+  margin: 5px;
+  padding-left: 2px;
+}
+.banneroutsidet {
+  background-image: url(https://cdn.discordapp.com/attachments/1021309167371300900/1041392868423643146/banner_itree.png);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.bannergardent{
+  background-image: url(https://cdn.discordapp.com/attachments/1021309167371300900/1041373035850104952/3.png);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+h1,
+p {
+  color: black;
+}
+
+.picslide {
+  position: relative;
+  width: 300px;
+}
+
+.allslide {
+  height: 350px;
+}
+
+
+.nav-link {
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  background-color: #f8c885;
+  color: #fff;
+}
+
+.sub-menu .col .navimg {
+  width: 250px;
+  height: 180px;
+}
+ul {
+  font-size: 17px;
+}
+.btn-block {
+  width: 285px;
+  background-color: #27abc8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 17px;
+}
+.btn-block:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+h1,
+p {
+  color: black;
+}
+
+.allslide {
+  height: 400px;
+}
+
+.sub-menu .col img {
+  width: 250px;
+  height: 180px;
+}
+
+button:active {
+  border: none;
+}
+
+.plantimg {
+  width: 280px;
+  height: 380px;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  float: left;
+}
+
+.showproduct {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.alldetail {
+  width: 35%;
+  overflow: auto;
+}
+
+.imgproduct {
+  width: 380px;
+  height: 480px;
+  border: 0.5px solid white;
+  border-radius: 5%;
+  padding-top: 10px;
+}
+
+
+#footer {
+  background-color: rgb(6, 73, 48);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  height: 420px;
+  padding-top: 40px;
+  width: 100%;
+  font-size: 21.3px;
+}
+
+.year {
+  padding-top: 1rem;
+}
+.container-footer {
+  width: 100%;
+  /* padding-left: 420px; */
+}
+/* #col1 {
+    margin-left: -50px;
+}
+#col2 {
+    margin-left: 50px;
+}
+#col3 {
+    margin-left: 200px;
+} */
+social {
+  margin-top: 20px;
+}
+svg {
+  position: relative;
+}
+.under-footer {
+  position: relative;
+  left: 0%;
+  padding-top: 200px;
+  padding-left: 400px;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons-quantity {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.carticon {
+  position: relative;
+}
+
+.numcart {
+  position: absolute;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 1em;
+  right: 0;
+  bottom: 2px;
+  font-size: 14px;
+  background-color: #14ae5c;
+  color: wheat;
+}
+#carouselExampleDark {
+  background-color: #adcf9f;
+}
+.box {
+  background-color: green;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.error {
+    color: #FF0000;
+}
+.container1 {
+  width: 100%;
+  height: 100%;
+  font-family: "Prompt", sans-serif;
+}
+.login1{
+    width: 50%;
+    margin: auto;
+  }
+.d-grid{
+    justify-content: center;
+}
+.text11{
+  padding-top: 40px;
+    margin: auto;
+    text-align: center;
+    height: 50%;
+  }
+
+  .linktoshop {
+    padding-top: 20px;
+    text-decoration: none;
+  }
+
+  .weltext {
+    padding: 40px;
+  }
+
+
+#zoom {
+  transition: transform 1s;
+}
+
+#zoom:hover {
+  
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.plantimg1 {
+    background-image: url('https://inwfile.com/s-co/edm2jc.jpg');
+    width: 280px;
+    height: 380px;
+    cursor: pointer;
+    background-size: 280px 380px;
+    transition: 1s ease;
+    
+}
+.plantimg1:hover {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/7o/vm/cq.jpg');
+  width: 280px;
+  height: 380px;
+}
+
+.plantimg2 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/cd/5f/vl.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg2:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/ai/7x/x9.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg3 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/ut/3t/vk.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg3:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/dt/56/mv.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg4 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/kc/cw/8o.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg4:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/mc/ik/we.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg5 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/vr/ac/xo.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg5:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/3v/25/fn.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg6 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/bx/tw/a2.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg6:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/li/nj/9p.png');
+width: 280px;
+height: 380px;
+}
+
+.plantimg7 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/ft/te/qm.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg7:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/vb/ii/mo.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg8 {
+  background-image: url('https://inwfile.com/s-co/h0gujr.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg8:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/pi/ph/be.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg9 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/ry/0f/ir.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg9:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/71/we/2r.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg10 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/qg/r0/6e.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg10:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/rh/3j/fi.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg11 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/hw/41/tl.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg11:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/o2/f0/cd.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg12 {
+  background-image: url('https://inwfile.com/s-co/20tj4c.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg12:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/mv/fd/ad.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg13 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/c0/qi/ts.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg13:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/i0/or/qn.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg14 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/si/fw/c0.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg14:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/yl/wo/6o.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg15 {
+  background-image: url('https://inwfile.com/s-co/esjpev.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg15:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/nx/v7/32.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg16 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/vv/p0/8i.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg16:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/sy/qi/0o.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg17 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/fg/o6/te.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg17:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/52/fp/eg.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg18 {
+  background-image: url('https://inwfile.com/s-co/h3mi6w.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg18:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/n2/dx/en.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg19 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/51/bk/p4.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg19:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/l2/w4/p3.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantimg20 {
+  background-image: url('https://inwfile.com/s-co/v4w3oz.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantimg20:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/c5/ne/b9.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg1 {
+  background-image: url('https://inwfile.com/s-co/ufvmrm.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg1:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/06/4s/sd.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg2 {
+  background-image: url('https://inwfile.com/s-co/d79fom.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg2:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/nu/ql/40.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg3 {
+  background-image: url('https://inwfile.com/s-co/ljmt25.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg3:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/ck/36/86.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg4 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/37/ge/ye.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg4:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/xm/o1/uk.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg5 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/jj/n9/cc.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg5:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/3h/ko/cl.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg6 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/ik/6d/f8.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg6:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/58/l3/vl.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg7 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/se/ef/sl.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg7:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/ce/ub/8y.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg8 {
+  background-image: url('https://inwfile.com/s-co/w663d0.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg8:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/j2/5a/4w.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg9 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/1z/jc/aw.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg9:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/q0/zg/1k.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg10 {
+  background-image: url('https://inwfile.com/s-co/pyox0z.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg10:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/bp/of/ys.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg11 {
+  background-image: url('https://inwfile.com/s-co/jhnfsg.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg11:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/m6/p4/vj.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg12 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/5y/zf/6v.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg12:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/rk/4c/7b.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg13 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/zp/a3/df.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg13:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/hm/id/9m.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg14 {
+  background-image: url('https://inwfile.com/s-co/udsanf.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg14:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/ez/z5/is.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg15 {
+  background-image: url('https://inwfile.com/s-co/oqx809.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg15:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/qd/ho/w3.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg16 {
+  background-image: url('https://inwfile.com/s-co/55atvc.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg16:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/iw/jr/kk.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg17 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/8g/rv/h9.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg17:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/qj/dp/8u.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg18 {
+  background-image: url('https://inwfile.com/s-co/ao0utu.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg18:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/vu/63/h6.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg19 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/um/m1/ld.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg19:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/fw/3z/gs.jpg');
+width: 280px;
+height: 380px;
+}
+
+.plantoimg20 {
+  background-image: url('https://co.lnwfile.com/_/co/_raw/yd/qu/30.jpg');
+  width: 280px;
+  height: 380px;
+  cursor: pointer;
+  background-size: 280px 380px;
+  transition: 1s ease;
+  
+}
+.plantoimg20:hover {
+background-image: url('https://co.lnwfile.com/_/co/_raw/j4/uj/mk.jpg');
+width: 280px;
+height: 380px;
+}
+
